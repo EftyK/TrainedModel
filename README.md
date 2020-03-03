@@ -29,7 +29,17 @@ Example: \
 &nbsp;&nbsp;&nbsp;&nbsp; ...
 
 ## How to identify tree species?
-Download the folder and copy it under object_detection.
+Download the folder and copy it under object_detection. Now your file structure should be:
+-tensorflow \
+&nbsp;&nbsp;&nbsp;&nbsp; -models \
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-research \
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -object_detection \
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; -TrainedModel
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; ... \
+&nbsp;&nbsp;&nbsp;&nbsp; ...
+
 
 Open IdentifyTreeSpecies.ipynb and run the cells consecutively. When you reach the last executable cell, you should get an output this:
 
