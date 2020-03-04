@@ -7,41 +7,45 @@ The Jupyter notebook (IdentifyTreeSpecies.ipynb) loads a trained tensorflow mode
 Apart from the Jupyter notebook, this repository provides the aforementioned model, the corresponding tree species label map and some images for testing the model. 
 
 ## Prerequisites
-To run IdentifyTreeSpecies.ipynb, you must have the following prerequisites installed on your system:
-* Python > 3.6.0
-* jupyter-console 6.1.0 
-* tensorflow-cpu 2.1.0 (use pip install)
-* tensorflow object_detection API (see instructions [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) )
+1. Python > 3.6.10
 
-...as well as the following libraries (can also be installed through pip):
-* numpy 1.17.2
-* pathlib2 2.3.5
-* ipython 7.8.0
+2. The following 4 commands will install almost all packages that you will need:
+```Bash
+pip install tensorflow-cpu
+pip install jupyter
+pip install lxml
+pip install contextlib2
+```
+
+3. Download or git clone [this](https://github.com/tensorflow/models) repository.
 
 The instructions above should end in acquiring locally the tree-structured project directories of Tensorflow. \
 Example: \
--tensorflow \
-&nbsp;&nbsp;&nbsp;&nbsp; -models \
-&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-research \
-&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+-models \
+&nbsp;&nbsp;&nbsp;&nbsp;-research \
+&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp; -object_detection \
-&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; ... \
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;... \
 &nbsp;&nbsp;&nbsp;&nbsp; ...
 
+4. Navigate in models/research directory and run
+```Bash
+pip install .
+```
+
 ## How to use this project
-Download the folder and copy it under object_detection. Now your file structure should be:
--tensorflow \
-&nbsp;&nbsp;&nbsp;&nbsp; -models \
-&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-research \
-&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+1. Download or git clone the repository and copy it under object_detection. Now your file structure should be: \
+-models \
+&nbsp;&nbsp;&nbsp;&nbsp;-research \
+&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp; -object_detection \
-&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; -TrainedModel \
 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; ... \
 &nbsp;&nbsp;&nbsp;&nbsp; ...
 
 
-Open IdentifyTreeSpecies.ipynb and run the cells consecutively. When you reach the last executable cell, you should get an output like this:
+2. Open IdentifyTreeSpecies.ipynb and run the cells consecutively. When you reach the last executable cell, you should get an output like this:
 
 ![Example output](example.png)
 *Fig. 1 - Example output*
