@@ -1,8 +1,8 @@
 # TrainedModel
-This repository containes a ready-to-use tensorflow model, for the purpose of identifying Platanus hispanica and Celtis australis trees in the streets of Barcelona, Spain.
+This repository contains a ready-to-use tensorflow model for the purpose of identifying Platanus hispanica and Celtis australis trees in the streets of Barcelona, Spain.
 
 ## Contents
-The Jupyter notebook (IdentifyTreeSpecies.ipynb) loads a trained tensorflow model visualizes the results.
+The Jupyter notebook (IdentifyTreeSpecies.ipynb) loads the trained tensorflow model and visualizes the results.
 
 Apart from the Jupyter notebook, this repository provides the aforementioned model, the corresponding tree species label map and some images for testing the model. 
 
@@ -18,9 +18,9 @@ pip install lxml
 pip install contextlib2
 ```
 
-3. Download or git clone [this](https://github.com/tensorflow/models) repository.
+3. Download or git clone [tensorflow/models](https://github.com/tensorflow/models) repository.
 
-This should end in acquiring locally the tree-structured project directories of Tensorflow. \
+This should result in acquiring locally the tree-structured project directories of Tensorflow. \
 Example: \
 -models \
 &nbsp;&nbsp;&nbsp;&nbsp;-research \
@@ -29,7 +29,7 @@ Example: \
 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;... \
 &nbsp;&nbsp;&nbsp;&nbsp; ...
 
-4. Navigate in models/research directory and run
+4. Navigate to models/research directory and run
 ```Bash
 pip install .
 ```
