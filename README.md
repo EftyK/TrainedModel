@@ -20,7 +20,7 @@ pip install contextlib2
 
 3. Download or git clone [this](https://github.com/tensorflow/models) repository.
 
-The instructions above should end in acquiring locally the tree-structured project directories of Tensorflow. \
+This should end in acquiring locally the tree-structured project directories of Tensorflow. \
 Example: \
 -models \
 &nbsp;&nbsp;&nbsp;&nbsp;-research \
