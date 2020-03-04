@@ -7,6 +7,7 @@ The Jupyter notebook (IdentifyTreeSpecies.ipynb) loads a trained tensorflow mode
 Apart from the Jupyter notebook, this repository provides the aforementioned model, the corresponding tree species label map and some images for testing the model. 
 
 ## Prerequisites
+To run IdentifyTreeSpecies.ipynb, you must have the following prerequisites installed on your system:
 1. Python > 3.6.10
 
 2. The following 4 commands will install almost all packages that you will need:
